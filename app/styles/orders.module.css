@@ -1,0 +1,225 @@
+.wrap {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  font-family:
+    Inter, system-ui, -apple-system, "Segoe UI", Helvetica, sans-serif;
+  color: #4c5158;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #272b33;
+  margin: 0 0 0.5rem;
+}
+
+.sub {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.tab {
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  border: 1px solid #d8d3cc;
+  color: #4c5158;
+  text-decoration: none;
+  background: #ffffff;
+}
+
+.tab:hover {
+  border-color: #272b33;
+  color: #272b33;
+}
+
+.tabActive {
+  background: #0e718d;
+  border-color: #0e718d;
+  color: #ffffff;
+}
+
+.tabActive:hover {
+  color: #ffffff;
+  border-color: #0e718d;
+}
+
+.searchRow {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchInput {
+  flex: 1 1 18rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #272b33;
+  padding: 0.8rem 1.25rem;
+  border: 1px solid #d8d3cc;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.searchInput:focus {
+  outline: 3px solid #0e718d;
+  outline-offset: 1px;
+  border-color: #0e718d;
+}
+
+.searchButton {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 0.8rem 1.75rem;
+  border: none;
+  border-radius: 999px;
+  background: #0e718d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background: #0b5c73;
+}
+
+.searchButton:focus-visible,
+.clearButton:focus-visible,
+.tab:focus-visible {
+  outline: 3px solid #0e718d;
+  outline-offset: 3px;
+}
+
+.clearButton {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 1.75rem;
+  border-radius: 999px;
+  border: 1px solid #d8d3cc;
+  color: #272b33;
+  text-decoration: none;
+  background: #ffffff;
+}
+
+.clearButton:hover {
+  border-color: #272b33;
+}
+
+.count {
+  margin: 1.5rem 0 0;
+  font-size: 0.98rem;
+}
+
+.error {
+  margin-top: 1.5rem;
+  background: #fdecea;
+  color: #8f1d12;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  line-height: 1.55;
+}
+
+.empty {
+  margin-top: 1.5rem;
+  line-height: 1.65;
+}
+
+.empty a {
+  color: #0e718d;
+  font-weight: 700;
+}
+
+.tableScroll {
+  overflow-x: auto;
+  margin-top: 1.25rem;
+  border: 1px solid #e6e2dc;
+  border-radius: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  min-width: 56rem;
+}
+
+.table th {
+  text-align: left;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #6b7078;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e6e2dc;
+  background: #faf9f7;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #f0ede9;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.orderName {
+  font-weight: 700;
+  color: #272b33;
+}
+
+.pill {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.pillGreen {
+  background: #e3f2e9;
+  color: #1c6b3a;
+}
+
+.pillAmber {
+  background: #fdf0dc;
+  color: #9a6200;
+}
+
+.pillBlue {
+  background: #e3effd;
+  color: #1d5bbf;
+}
+
+.pillGray {
+  background: #eeeeec;
+  color: #5f6367;
+}
+
+.pillRed {
+  background: #fdecea;
+  color: #8f1d12;
+}
+
+@media only screen and (max-width: 38rem) {
+  .wrap {
+    padding-top: 2rem;
+  }
+}

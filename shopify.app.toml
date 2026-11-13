@@ -1,0 +1,38 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "78d0c1d8f29beb2866563b124abb6e66"
+name = "WaaWe"
+application_url = "https://waawe-analytics.fly.dev"
+embedded = true
+
+[access_scopes]
+# Read-only scopes for the WaaWe external analytics dashboard.
+scopes = "read_orders,read_customers,read_products,read_analytics"
+
+[webhooks]
+api_version = "2026-10"
+
+  # Mandatory GDPR webhooks, pointed at the production domain.
+  # `shopify app deploy` pushes these URLs to the Partners dashboard.
+  [webhooks.privacy_compliance]
+  customer_data_request_url = "https://waawe-analytics.fly.dev/webhooks/customers/data_request"
+  customer_deletion_url = "https://waawe-analytics.fly.dev/webhooks/customers/redact"
+  shop_deletion_url = "https://waawe-analytics.fly.dev/webhooks/shop/redact"
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/uninstalled"
+  topics = [ "app/uninstalled" ]
+
+  [[webhooks.subscriptions]]
+  uri = "/webhooks/app/scopes_update"
+  topics = [ "app/scopes_update" ]
+
+[auth]
+redirect_urls = [
+  "https://waawe-analytics.fly.dev/auth/callback",
+  "https://waawe-analytics.fly.dev/auth/shopify/callback",
+  "https://waawe-analytics.fly.dev/api/auth/callback"
+]
+
+[build]
+automatically_update_urls_on_dev = true

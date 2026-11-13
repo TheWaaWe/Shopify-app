@@ -1,0 +1,10 @@
+.cache
+build
+node_modules
+
+# Secrets / local state must never ship in the image
+.env
+.env.*
+prisma/dev.sqlite*
+.shopify
+.shopify.lock

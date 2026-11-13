@@ -1,0 +1,193 @@
+.wrap {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  font-family:
+    Inter, system-ui, -apple-system, "Segoe UI", Helvetica, sans-serif;
+  color: #4c5158;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #272b33;
+  margin: 0 0 0.5rem;
+}
+
+.sub {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 1.75rem;
+}
+
+.searchRow {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchInput {
+  flex: 1 1 18rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #272b33;
+  padding: 0.8rem 1.25rem;
+  border: 1px solid #d8d3cc;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.searchInput:focus {
+  outline: 3px solid #0e718d;
+  outline-offset: 1px;
+  border-color: #0e718d;
+}
+
+.searchButton {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 0.8rem 1.75rem;
+  border: none;
+  border-radius: 999px;
+  background: #0e718d;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.searchButton:hover {
+  background: #0b5c73;
+}
+
+.searchButton:focus-visible,
+.clearButton:focus-visible {
+  outline: 3px solid #0e718d;
+  outline-offset: 3px;
+}
+
+.clearButton {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 1.75rem;
+  border-radius: 999px;
+  border: 1px solid #d8d3cc;
+  color: #272b33;
+  text-decoration: none;
+  background: #ffffff;
+}
+
+.clearButton:hover {
+  border-color: #272b33;
+}
+
+.count {
+  margin: 1.5rem 0 0;
+  font-size: 0.98rem;
+}
+
+.error {
+  margin-top: 1.5rem;
+  background: #fdecea;
+  color: #8f1d12;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  line-height: 1.55;
+}
+
+.empty {
+  margin-top: 1.5rem;
+  line-height: 1.65;
+}
+
+.empty a {
+  color: #0e718d;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 1.75rem;
+}
+
+.card {
+  border: 1px solid #e6e2dc;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #f5f4f2;
+}
+
+.noPhoto {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f4f2;
+  color: #8a8f96;
+  font-size: 0.95rem;
+}
+
+.cardBody {
+  padding: 1.1rem 1.25rem 1.25rem;
+}
+
+.cardName {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #272b33;
+  margin: 0 0 0.35rem;
+  line-height: 1.4;
+}
+
+.cardPrice {
+  font-size: 0.98rem;
+  margin: 0 0 0.6rem;
+}
+
+.pill {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+}
+
+.pillActive {
+  background: #e3f2e9;
+  color: #1c6b3a;
+}
+
+.pillDraft {
+  background: #fdf0dc;
+  color: #9a6200;
+}
+
+.pillArchived {
+  background: #eeeeec;
+  color: #5f6367;
+}
+
+@media only screen and (max-width: 56rem) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 38rem) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
